@@ -1,0 +1,9 @@
+{"Departments":[
+{"deptid":101,"deptname":"HR"},
+{"deptid":102,"deptname":"Marketing"},
+{"deptid":103,"deptname":"IT"},
+{"deptid":104,"deptname":"Finance"},
+{"deptid":105,"deptname":"Sales"},
+{"deptid":106,"deptname":"Logistics"}
+]
+}

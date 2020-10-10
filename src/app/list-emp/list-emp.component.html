@@ -1,0 +1,53 @@
+<div class="col-md-12">
+    <button type="button" (click)="AddEmployee()" class="btn btn-info" title="Click to Add">Add Employee</button>
+    <hr>
+    <h2> Employee Details</h2> 
+
+    
+    <div class="table-responsive table-container" style="margin-right:100px;" >  
+    <table class="table">
+        <thead appApphighlight>
+        <tr>
+            <th style="visibility:hidden;"></th>
+            <th>AssociateID</th>
+            <th>Name</th>
+            <th>EmailID</th>
+            <th>Address</th>
+            <th>Designation</th>
+            <th>Gender</th>
+            <th>Salary</th>
+            <th>Phone</th>
+            <th>Actions</th>
+            
+        
+</tr>
+</thead>
+   
+    <tbody>
+      <!-- <tr *ngFor="let emp of emplst;odd as isOdd; even as isEven" [class.odd]="isOdd" [class.even]="isEven"  >-->
+      <tr *ngFor="let emp of emplst | paginate:{ itemsPerPage: 5, currentPage: p };odd as isOdd; even as isEven" [class.odd]="isOdd" [class.even]="isEven">
+          <td style="visibility:hidden;">{{emp.Empid}}</td>
+          <td>{{emp.AssociateID}}</td>
+          <td>{{emp.Name}}</td>
+          <td>{{emp.Emailid}}</td>
+          <td>{{emp.EmpAddress}}</td>
+          <td>{{emp.Designation }}</td>
+          <td>{{emp.Gender=="M"?"Male":"Female"}}</td>
+          <td>{{emp.Salary | currency:'INR':symbol }}</td>
+          <td>{{emp.Phone}}</td>
+          <td><button type="button" (click)="editemployee(emp)" class="btn btn-info" title="Click to Edit" >Edit</button>  |
+          <button type="button" (click)="deleteemployee(emp)" class="btn btn-info" title="Click to Delete" >Delete</button></td>
+        
+        </tr>
+    </tbody>
+    
+    </table>
+    <ul class="pagination">  
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>  
+        </ul> 
+
+    </div>
+
+    
+</div>
+    

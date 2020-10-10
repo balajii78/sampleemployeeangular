@@ -1,0 +1,6 @@
+{"Employees":[{"EmpId":1010,"Empname":"Aparna","Gender":"F","Designation":"senior manager","DepartmentId":101,"email":"aparna@yahoo.com","phone":123456677,"salary":90000.00,"iscontract":true,"isactive":true},
+{"EmpId":1014,"Empname":"Arjun","Gender":"M","Designation":"weeq","DepartmentId":102,"email":"wrwerwe","phone":111,"salary":222.00,"iscontract":true,"isactive":false},
+{"EmpId":1009,"Empname":"Arun","Gender":"M","Designation":"store keeper","DepartmentId":106,"email":"arun@yahoo.com","phone":11111111,"salary":25000.00,"iscontract":false,"isactive":true},
+{"EmpId":7,"Empname":"Monica","Gender":"F","Designation":"Accountant","DepartmentId":104,"email":"mbuleah@gmail.com","phone":1234567890,"salary":35000.00,"iscontract":false,"isactive":true},
+{"EmpId":1012,"Empname":"savitha","Gender":"F","Designation":"senior mgr","DepartmentId":101,"email":"a@a.com","phone":121224,"salary":90000.00,"iscontract":true,"isactive":true}
+]}
